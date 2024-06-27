@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .base-page-style {
+    @apply 
+    max-w-[390px] 
+    w-full 
+    h-full
+    flex 
+    flex-col 
+    justify-between
+    text-white;
+  }
+  
+  .bg-gradient {
+    background: linear-gradient(
+      214.07deg,
+      #493f1c -1.54%,
+      #322a1e 26.82%,
+      #30251d 47.85%,
+      #432816 72%,
+      #2a211d 108.22%
+    );
+  }
+  
+  .ActionButton-message {
+    font-family: Unbounded, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .ActionButton {
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.4);
+  }
+
+  .StatsButton-message {
+    font-family: Unbounded, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    /* background-clip: text; Добавлен background-clip
+    -webkit-background-clip: text; Для Safari */
+  }
+
+  .StatsButton {
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0.6);
+  }
+
+
+  /* .white-gradient {
+    background: linear-gradient(
+      293.23deg,
+      #f98905 -19.5%,
+      #fc4802 27.83%,
+      #fe8a01 59.76%,
+      #e1a720 79.58%,
+      #fcb100 97.06%
+    ),
+    linear-gradient(0deg, #fa6503, #fa6503),
+    linear-gradient(0deg, rgba(85, 72, 53, 0.95), rgba(85, 72, 53, 0.95));
+  } */
+
+  .page-background {
+    position: fixed; /* Зафиксировать фон */
+    max-width: 390px;
+    top: 0; /* Поместить верхний край фона в начало страницы */
+    left: 0; /* Поместить левый край фона в начало страницы */
+    width: 100%; /* Занять всю ширину экрана */
+    height: 100%; /* Занять всю высоту экрана */
+    background-color: #010010; /* Выбрать цвет фона */
+    z-index: -1; /* Поместить фон под другие элементы */
+  }
+
+
+  .orange-gradient {
+    background: linear-gradient(
+        293.23deg,
+        #f98905 -19.5%,
+        #fc4802 27.83%,
+        #fe8a01 59.76%,
+        #e1a720 79.58%,
+        #fcb100 97.06%
+      ),
+      linear-gradient(0deg, #fa6503, #fa6503),
+      linear-gradient(0deg, rgba(85, 72, 53, 0.95), rgba(85, 72, 53, 0.95));
+  
+    box-shadow: 0px 0px 10px 0px #f2960e inset;
+  }
+  
+  .bg-button {
+    background: linear-gradient(
+        0deg,
+        rgba(85, 72, 53, 0.95),
+        rgba(85, 72, 53, 0.95)
+      ),
+      linear-gradient(0deg, #fa6503, #fa6503);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(180deg, #f4d9af 0%, #f5ce9e 100%);
+    -webkit-text-fill-color: transparent;
+  }
