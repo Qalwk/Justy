@@ -1,4 +1,4 @@
-import React from 'react'
+
 import type { MouseEventHandler } from 'react'
 
 interface ActionButtonProps {
@@ -11,7 +11,6 @@ interface ActionButtonProps {
 export function ActionButton({
     variant = 'primary',
     onClick,
-    className,
     message,
   }: ActionButtonProps) {
     

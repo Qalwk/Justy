@@ -1,1 +1,1 @@
-import { TapCoin } from "./TapCoin";
+export { TapCoin } from "./TapCoin";

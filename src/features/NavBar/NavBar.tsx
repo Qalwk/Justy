@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Home from "./Home.svg?react"
 import Friends from "./Friends.svg?react"
 import Top from "./Top.svg?react"
@@ -7,9 +7,11 @@ import Boosts from "./Boosts.svg?react"
 
 export function NavBar() {
 
+
+
   const [activeItem, setActiveItem] = useState("home");
 
-  const handleItemClick = (item) => {
+  const handleItemClick = (item:string) => {
     setActiveItem(item);
   };
 

@@ -1,1 +1,1 @@
-import {StatsButton} from "./StatsButton";
+export {StatsButton} from "./StatsButton";

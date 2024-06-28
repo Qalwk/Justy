@@ -3,12 +3,10 @@
 interface StatsButtonProps {
     message1: string
     message2: string
-    className?: string
     height: string; // Добавляем пропс для высоты
   }
 
 export function StatsButton({
-    className,
     message1,
     message2,
     height, // Принимаем пропс height

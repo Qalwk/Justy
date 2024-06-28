@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Star from "./Star.svg?react"
 import UpEl from "./UpEl.svg?react"
 import UpWhite from "./UpWhite.svg?react"
