@@ -11,7 +11,7 @@ export function HomePage() {
     <div className="max-w-[390px] w-full h-[100%] flex flex-col items-center px-5 pt-[3rem] pb-[3rem]">
       <div className='max-w-[390px] w-full flex flex-col h-full gap-[30px] text-white'>
         <div className='flex flex-col gap-2'>
-          <ActionButton variant='primary' message='Поиск сообщества' onClick={() => {}}/>
+          <ActionButton variant='primary' message='Поиск клана' onClick={() => {}}/>
           <div className='flex flex-row gap-2'>
             <StatsButton message1='Tap' message2='+6 Just' height='40px' />
             <StatsButton message1='For up' message2='100k' height='40px' />
@@ -31,7 +31,7 @@ export function HomePage() {
       </div>
 
       <div className="absolute bottom-0 mb-[3rem]">
-        <NavBar/>
+        <NavBar initialActiveItem="home"/>
       </div>
 
       <BackgroundHome/>

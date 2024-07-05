@@ -10,6 +10,14 @@ export default {
         title:["Unbounded", "sans-serif"],
       }
     },
+    typography: {
+      DEFAULT: {
+        css: {
+          // ...
+          'font-feature-settings': "'tnum' on, 'lnum' on"
+        },
+      },
+    },
   },
   plugins: [],
 }

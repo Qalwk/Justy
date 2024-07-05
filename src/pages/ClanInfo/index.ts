@@ -1,0 +1,1 @@
+export { ClanInfo } from './ClanInfo';

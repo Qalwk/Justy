@@ -1,10 +1,14 @@
+import { BrowserRouter } from "react-router-dom"
+import { PageRoutes } from "../pages"
 import { HomePage } from "../pages/HomePage"
 
 
 function App() {
 
   return (
-    <HomePage/>
+    <BrowserRouter>
+      <PageRoutes />
+    </BrowserRouter>
   )
 }
 

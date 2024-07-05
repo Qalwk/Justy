@@ -5,14 +5,34 @@ import Top from "./Top.svg?react"
 import Mission from "./Mission.svg?react"
 import Boosts from "./Boosts.svg?react"
 
-export function NavBar() {
+import { useNavigate } from "react-router-dom";
+
+interface NavBarProps {
+  initialActiveItem: string;
+}
 
 
+export const NavBar: React.FC<NavBarProps> = ({ initialActiveItem }) => {
 
-  const [activeItem, setActiveItem] = useState("home");
+  const navigate = useNavigate();
+
+  const handleLinkClick = (link:string) => {
+    navigate(link);
+  };
+
+  const [activeItem, setActiveItem] = useState(initialActiveItem);
 
   const handleItemClick = (item:string) => {
     setActiveItem(item);
+
+    // setActiveItem(item);
+    // if (item === 'top') {
+    //   handleLinkClick('/game-top');
+    // } else if (item === 'friend') {
+    //   handleLinkClick('/your-friends');
+    // } else if (item === 'home') {
+    //   handleLinkClick('/');
+    // }
   };
 
   return (
@@ -25,7 +45,7 @@ export function NavBar() {
                 ? 'bg-gradient-to-r from-[#87B7FF] to-[#0565F7] blur-0'
                 : ''
             }`}
-            onClick={() => handleItemClick('home')}
+            onClick={() => { handleLinkClick('/'); handleItemClick('home'); }}
           >
                       <Home/>
           </div>
@@ -35,7 +55,7 @@ export function NavBar() {
                 ? 'bg-gradient-to-r from-[#87B7FF] to-[#0565F7] blur-0'
                 : ''
             }`}
-            onClick={() => handleItemClick('friend')}
+            onClick={() => { handleLinkClick('/your-friends'); handleItemClick('friend'); }}
           >
                       <Friends/>
           </div>
@@ -45,7 +65,7 @@ export function NavBar() {
                 ? 'bg-gradient-to-r from-[#87B7FF] to-[#0565F7] blur-0'
                 : ''
             }`}
-            onClick={() => handleItemClick('top')}
+            onClick={() => { handleLinkClick('/game-top'); handleItemClick('top'); }}
           >
                       <Top/>
           </div>
@@ -55,7 +75,7 @@ export function NavBar() {
                 ? 'bg-gradient-to-r from-[#87B7FF] to-[#0565F7] blur-0'
                 : ''
             }`}
-            onClick={() => handleItemClick('mission')}
+            onClick={() => { handleLinkClick('/game-missions'); handleItemClick('mission'); }}
           >
                       <Mission/>
           </div>
@@ -65,7 +85,7 @@ export function NavBar() {
                 ? 'bg-gradient-to-r from-[#87B7FF] to-[#0565F7] blur-0'
                 : ''
             }`}
-            onClick={() => handleItemClick('boosts')}
+            onClick={() => { handleLinkClick('/game-boosts'); handleItemClick('boosts'); }}
           >
                       <Boosts/>
           </div>
