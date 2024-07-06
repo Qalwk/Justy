@@ -1,5 +1,5 @@
 
-import { useNavigate } from "react-router-dom";
+
 
 interface ActionButtonProps {
     variant: 'primary' | 'secondary'
@@ -16,11 +16,11 @@ export function ActionButton({
     selected,
   }: ActionButtonProps) {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleLinkClick = (link:string) => {
-      navigate(link);
-    };
+    // const handleLinkClick = (link:string) => {
+    //   navigate(link);
+    // };
     
     return (
       <>
